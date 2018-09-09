@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Bookworm-->
+        <scene sceneID="JKq-JN-dhb">
+            <objects>
+                <viewController storyboardIdentifier="studentLoggedInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xKS-OF-bq9" customClass="StudentLoggedInViewController" customModule="Bookworm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E9W-XW-VEU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEU-Cr-D1i">
+                                <rect key="frame" x="16" y="100" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MRN-I6-Y9x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your lectures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKz-NI-43K">
+                                <rect key="frame" x="16" y="150" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pWS-11-8Dj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.95294117647058818" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d1n-TZ-apr" firstAttribute="trailing" secondItem="gKz-NI-43K" secondAttribute="trailing" constant="16" id="5hi-JD-5rT"/>
+                            <constraint firstItem="d1n-TZ-apr" firstAttribute="trailing" secondItem="wEU-Cr-D1i" secondAttribute="trailing" constant="16" id="FOT-Du-YQt"/>
+                            <constraint firstItem="wEU-Cr-D1i" firstAttribute="leading" secondItem="d1n-TZ-apr" secondAttribute="leading" constant="16" id="QcJ-EK-eUe"/>
+                            <constraint firstItem="gKz-NI-43K" firstAttribute="top" secondItem="wEU-Cr-D1i" secondAttribute="bottom" constant="10" id="XcJ-iE-2Cj"/>
+                            <constraint firstItem="gKz-NI-43K" firstAttribute="height" secondItem="wEU-Cr-D1i" secondAttribute="height" id="qiS-Sr-t6c"/>
+                            <constraint firstItem="gKz-NI-43K" firstAttribute="leading" secondItem="d1n-TZ-apr" secondAttribute="leading" constant="16" id="uuj-BW-C6m"/>
+                            <constraint firstItem="wEU-Cr-D1i" firstAttribute="top" secondItem="d1n-TZ-apr" secondAttribute="top" constant="36" id="vsB-Yb-NFY"/>
+                            <constraint firstItem="gKz-NI-43K" firstAttribute="width" secondItem="wEU-Cr-D1i" secondAttribute="width" id="xJA-Nc-vpW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d1n-TZ-apr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bookworm" id="vyQ-nL-3z5">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="K05-jf-rC8">
+                            <connections>
+                                <action selector="logoutTapped:" destination="xKS-OF-bq9" id="tVh-56-pr1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="studentWelcomeLabel" destination="wEU-Cr-D1i" id="Ygj-jF-RYF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgk-1P-YsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="-143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DWD-51-fh1">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-ymd-jP-Tje" automaticallyAdjustsScrollViewInsets="NO" id="ymd-jP-Tje" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oxM-ue-mQj">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xKS-OF-bq9" kind="relationship" relationship="rootViewController" id="Jts-KZ-rd0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="obd-Kc-WqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-723.1884057971015" y="-142.66304347826087"/>
+        </scene>
+    </scenes>
+</document>

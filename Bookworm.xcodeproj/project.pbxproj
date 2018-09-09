@@ -1,0 +1,1033 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22BB5C48AAF6BCB405B4DC2E /* Pods_Bookworm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00FDA459603623C7BC31D39 /* Pods_Bookworm.framework */; };
+		2FCEAC007E84CBA48FD2D26E /* Pods_BookwormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEF5147F73F23B43F285A63 /* Pods_BookwormTests.framework */; };
+		4CA72CE6D31093A76EC75E59 /* Pods_BookwormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CC6D0748AC48903BC93B55 /* Pods_BookwormUITests.framework */; };
+		5C0DF5EF1F9FF26A00C6261F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0DF5ED1F9FF26A00C6261F /* ViewController.swift */; };
+		5C0DF5F21FA08BAC00C6261F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0DF5F11FA08BAC00C6261F /* RegistrationViewController.swift */; };
+		5C4EFB4D1F901CA200E90A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4EFB4C1F901CA200E90A22 /* AppDelegate.swift */; };
+		5C4EFB521F901CA200E90A22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4EFB501F901CA200E90A22 /* Main.storyboard */; };
+		5C4EFB571F901CA200E90A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4EFB551F901CA200E90A22 /* LaunchScreen.storyboard */; };
+		5C4EFB621F901CA200E90A22 /* BookwormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4EFB611F901CA200E90A22 /* BookwormTests.swift */; };
+		5C4EFB6D1F901CA200E90A22 /* BookwormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4EFB6C1F901CA200E90A22 /* BookwormUITests.swift */; };
+		5C4EFB7C1F91195800E90A22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C4EFB7B1F910DC500E90A22 /* GoogleService-Info.plist */; };
+		5C879A121FA0C0EF004E0FFD /* StudentLoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C879A111FA0C0EF004E0FFD /* StudentLoggedInViewController.swift */; };
+		5C879A141FA281DA004E0FFD /* StudentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C879A131FA281DA004E0FFD /* StudentNavigationController.swift */; };
+		D0B627902075141C00E0F949 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B6278F2075141C00E0F949 /* ColorConstants.swift */; };
+		D324F8861FD673B400F8D211 /* CourseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324F8851FD673B400F8D211 /* CourseClass.swift */; };
+		D324F8881FD674A900F8D211 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324F8871FD674A900F8D211 /* Rating.swift */; };
+		D324F88A1FD756E500F8D211 /* BookwormUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324F8891FD756E500F8D211 /* BookwormUser.swift */; };
+		D324F88C1FD8AD0600F8D211 /* LecturerCourseClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324F88B1FD8AD0600F8D211 /* LecturerCourseClassViewController.swift */; };
+		D37056991FD36A1A004BBCAC /* Lecturer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37056981FD36A1A004BBCAC /* Lecturer.storyboard */; };
+		D370569B1FD3736B004BBCAC /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D370569A1FD3736B004BBCAC /* Student.storyboard */; };
+		D37C40102037F61D008BA02B /* LecturerLiveClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C400F2037F61D008BA02B /* LecturerLiveClassViewController.swift */; };
+		D38346091FD3901F00085B86 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38346081FD3901F00085B86 /* Course.swift */; };
+		D3D6B7D0201ADF2F00CFD95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D6B7CF201ADF2E00CFD95B /* Assets.xcassets */; };
+		D3E2AD7B1FCE162A00B3EE3D /* LecturerLoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2AD7A1FCE162A00B3EE3D /* LecturerLoggedInViewController.swift */; };
+		D3E2AD7F1FCF6D4500B3EE3D /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2AD7E1FCF6D4500B3EE3D /* FirebaseService.swift */; };
+		D3E2AD811FD0BE2A00B3EE3D /* LecturerMyCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2AD801FD0BE2A00B3EE3D /* LecturerMyCoursesViewController.swift */; };
+		D3E2AD831FD0BE8600B3EE3D /* LecturerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2AD821FD0BE8600B3EE3D /* LecturerProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C4EFB5E1F901CA200E90A22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C4EFB411F901CA100E90A22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C4EFB481F901CA200E90A22;
+			remoteInfo = Bookworm;
+		};
+		5C4EFB691F901CA200E90A22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C4EFB411F901CA100E90A22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C4EFB481F901CA200E90A22;
+			remoteInfo = Bookworm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B2338288A04A4A532F271AB /* Pods-BookwormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookwormUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookwormUITests/Pods-BookwormUITests.release.xcconfig"; sourceTree = "<group>"; };
+		20D441F1E151132F854BD302 /* Pods-BookwormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookwormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookwormTests/Pods-BookwormTests.release.xcconfig"; sourceTree = "<group>"; };
+		349A059D28E52C8637CB8457 /* Pods-BookwormTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookwormTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-BookwormTests/Pods-BookwormTests.adhoc.xcconfig"; sourceTree = "<group>"; };
+		509FBB6D3A59DA7B1D9A6E1A /* Pods-BookwormUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookwormUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookwormUITests/Pods-BookwormUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C0DF5ED1F9FF26A00C6261F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C0DF5F11FA08BAC00C6261F /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		5C4EFB491F901CA200E90A22 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4EFB4C1F901CA200E90A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C4EFB511F901CA200E90A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C4EFB561F901CA200E90A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C4EFB581F901CA200E90A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4EFB5D1F901CA200E90A22 /* BookwormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookwormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4EFB611F901CA200E90A22 /* BookwormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormTests.swift; sourceTree = "<group>"; };
+		5C4EFB631F901CA200E90A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4EFB681F901CA200E90A22 /* BookwormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookwormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4EFB6C1F901CA200E90A22 /* BookwormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormUITests.swift; sourceTree = "<group>"; };
+		5C4EFB6E1F901CA200E90A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4EFB7B1F910DC500E90A22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5C879A111FA0C0EF004E0FFD /* StudentLoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLoggedInViewController.swift; sourceTree = "<group>"; };
+		5C879A131FA281DA004E0FFD /* StudentNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNavigationController.swift; sourceTree = "<group>"; };
+		6BEF5147F73F23B43F285A63 /* Pods_BookwormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookwormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89288638964A1665F6F59178 /* Pods-Bookworm.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookworm.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm.adhoc.xcconfig"; sourceTree = "<group>"; };
+		99CC6D0748AC48903BC93B55 /* Pods_BookwormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookwormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC4176F6EFBE36A70EB99A6 /* Pods-Bookworm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookworm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm.debug.xcconfig"; sourceTree = "<group>"; };
+		B36CB1BB97D560345A313E40 /* Pods-BookwormUITests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookwormUITests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-BookwormUITests/Pods-BookwormUITests.adhoc.xcconfig"; sourceTree = "<group>"; };
+		C81CB8F436F7EE3968FCCED1 /* Pods-BookwormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookwormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookwormTests/Pods-BookwormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0B6278F2075141C00E0F949 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		D16D3532DE33332F34AD24CA /* Pods-Bookworm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookworm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm.release.xcconfig"; sourceTree = "<group>"; };
+		D324F8851FD673B400F8D211 /* CourseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseClass.swift; sourceTree = "<group>"; };
+		D324F8871FD674A900F8D211 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		D324F8891FD756E500F8D211 /* BookwormUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormUser.swift; sourceTree = "<group>"; };
+		D324F88B1FD8AD0600F8D211 /* LecturerCourseClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturerCourseClassViewController.swift; sourceTree = "<group>"; };
+		D37056981FD36A1A004BBCAC /* Lecturer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lecturer.storyboard; sourceTree = "<group>"; };
+		D370569A1FD3736B004BBCAC /* Student.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Student.storyboard; sourceTree = "<group>"; };
+		D37C400F2037F61D008BA02B /* LecturerLiveClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturerLiveClassViewController.swift; sourceTree = "<group>"; };
+		D38346081FD3901F00085B86 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		D3D6B7CF201ADF2E00CFD95B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3E2AD7A1FCE162A00B3EE3D /* LecturerLoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturerLoggedInViewController.swift; sourceTree = "<group>"; };
+		D3E2AD7E1FCF6D4500B3EE3D /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		D3E2AD801FD0BE2A00B3EE3D /* LecturerMyCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturerMyCoursesViewController.swift; sourceTree = "<group>"; };
+		D3E2AD821FD0BE8600B3EE3D /* LecturerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturerProfileViewController.swift; sourceTree = "<group>"; };
+		E00FDA459603623C7BC31D39 /* Pods_Bookworm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookworm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C4EFB461F901CA200E90A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BB5C48AAF6BCB405B4DC2E /* Pods_Bookworm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4EFB5A1F901CA200E90A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCEAC007E84CBA48FD2D26E /* Pods_BookwormTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4EFB651F901CA200E90A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA72CE6D31093A76EC75E59 /* Pods_BookwormUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BCFEC64A22B2AE77DC2D6BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AC4176F6EFBE36A70EB99A6 /* Pods-Bookworm.debug.xcconfig */,
+				D16D3532DE33332F34AD24CA /* Pods-Bookworm.release.xcconfig */,
+				C81CB8F436F7EE3968FCCED1 /* Pods-BookwormTests.debug.xcconfig */,
+				20D441F1E151132F854BD302 /* Pods-BookwormTests.release.xcconfig */,
+				509FBB6D3A59DA7B1D9A6E1A /* Pods-BookwormUITests.debug.xcconfig */,
+				0B2338288A04A4A532F271AB /* Pods-BookwormUITests.release.xcconfig */,
+				89288638964A1665F6F59178 /* Pods-Bookworm.adhoc.xcconfig */,
+				349A059D28E52C8637CB8457 /* Pods-BookwormTests.adhoc.xcconfig */,
+				B36CB1BB97D560345A313E40 /* Pods-BookwormUITests.adhoc.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C4EFB401F901CA100E90A22 = {
+			isa = PBXGroup;
+			children = (
+				5C4EFB4B1F901CA200E90A22 /* Bookworm */,
+				5C4EFB601F901CA200E90A22 /* BookwormTests */,
+				5C4EFB6B1F901CA200E90A22 /* BookwormUITests */,
+				5C4EFB4A1F901CA200E90A22 /* Products */,
+				5BCFEC64A22B2AE77DC2D6BF /* Pods */,
+				5F656C130AF77563B8C47E6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5C4EFB4A1F901CA200E90A22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C4EFB491F901CA200E90A22 /* Bookworm.app */,
+				5C4EFB5D1F901CA200E90A22 /* BookwormTests.xctest */,
+				5C4EFB681F901CA200E90A22 /* BookwormUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C4EFB4B1F901CA200E90A22 /* Bookworm */ = {
+			isa = PBXGroup;
+			children = (
+				D383460A1FD3902A00085B86 /* model */,
+				D370569A1FD3736B004BBCAC /* Student.storyboard */,
+				D3E2AD7E1FCF6D4500B3EE3D /* FirebaseService.swift */,
+				5C0DF5ED1F9FF26A00C6261F /* ViewController.swift */,
+				5C0DF5F11FA08BAC00C6261F /* RegistrationViewController.swift */,
+				5C4EFB7B1F910DC500E90A22 /* GoogleService-Info.plist */,
+				D37056981FD36A1A004BBCAC /* Lecturer.storyboard */,
+				5C4EFB501F901CA200E90A22 /* Main.storyboard */,
+				5C4EFB7A1F901E1F00E90A22 /* Supporting Files */,
+				5C879A111FA0C0EF004E0FFD /* StudentLoggedInViewController.swift */,
+				5C879A131FA281DA004E0FFD /* StudentNavigationController.swift */,
+				D3E2AD7A1FCE162A00B3EE3D /* LecturerLoggedInViewController.swift */,
+				D3E2AD801FD0BE2A00B3EE3D /* LecturerMyCoursesViewController.swift */,
+				D37C400F2037F61D008BA02B /* LecturerLiveClassViewController.swift */,
+				D324F88B1FD8AD0600F8D211 /* LecturerCourseClassViewController.swift */,
+				D3E2AD821FD0BE8600B3EE3D /* LecturerProfileViewController.swift */,
+				D0B6278F2075141C00E0F949 /* ColorConstants.swift */,
+			);
+			path = Bookworm;
+			sourceTree = "<group>";
+		};
+		5C4EFB601F901CA200E90A22 /* BookwormTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C4EFB611F901CA200E90A22 /* BookwormTests.swift */,
+				5C4EFB631F901CA200E90A22 /* Info.plist */,
+			);
+			path = BookwormTests;
+			sourceTree = "<group>";
+		};
+		5C4EFB6B1F901CA200E90A22 /* BookwormUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C4EFB6C1F901CA200E90A22 /* BookwormUITests.swift */,
+				5C4EFB6E1F901CA200E90A22 /* Info.plist */,
+			);
+			path = BookwormUITests;
+			sourceTree = "<group>";
+		};
+		5C4EFB7A1F901E1F00E90A22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3D6B7CF201ADF2E00CFD95B /* Assets.xcassets */,
+				5C4EFB4C1F901CA200E90A22 /* AppDelegate.swift */,
+				5C4EFB551F901CA200E90A22 /* LaunchScreen.storyboard */,
+				5C4EFB581F901CA200E90A22 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F656C130AF77563B8C47E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E00FDA459603623C7BC31D39 /* Pods_Bookworm.framework */,
+				6BEF5147F73F23B43F285A63 /* Pods_BookwormTests.framework */,
+				99CC6D0748AC48903BC93B55 /* Pods_BookwormUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D383460A1FD3902A00085B86 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D38346081FD3901F00085B86 /* Course.swift */,
+				D324F8851FD673B400F8D211 /* CourseClass.swift */,
+				D324F8871FD674A900F8D211 /* Rating.swift */,
+				D324F8891FD756E500F8D211 /* BookwormUser.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C4EFB481F901CA200E90A22 /* Bookworm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C4EFB711F901CA200E90A22 /* Build configuration list for PBXNativeTarget "Bookworm" */;
+			buildPhases = (
+				94C1CBB87680E8D8B035406D /* [CP] Check Pods Manifest.lock */,
+				5C4EFB451F901CA200E90A22 /* Sources */,
+				5C4EFB461F901CA200E90A22 /* Frameworks */,
+				5C4EFB471F901CA200E90A22 /* Resources */,
+				0D1183EFE84206ECB9436BED /* [CP] Embed Pods Frameworks */,
+				3C85346F1858AD1176E1D31E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bookworm;
+			productName = Bookworm;
+			productReference = 5C4EFB491F901CA200E90A22 /* Bookworm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C4EFB5C1F901CA200E90A22 /* BookwormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C4EFB741F901CA200E90A22 /* Build configuration list for PBXNativeTarget "BookwormTests" */;
+			buildPhases = (
+				42CFFC50DE510377080E00AB /* [CP] Check Pods Manifest.lock */,
+				5C4EFB591F901CA200E90A22 /* Sources */,
+				5C4EFB5A1F901CA200E90A22 /* Frameworks */,
+				5C4EFB5B1F901CA200E90A22 /* Resources */,
+				E20C0826DBA353798C7E7AE0 /* [CP] Embed Pods Frameworks */,
+				C3EB2F8C98400799684D096E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C4EFB5F1F901CA200E90A22 /* PBXTargetDependency */,
+			);
+			name = BookwormTests;
+			productName = BookwormTests;
+			productReference = 5C4EFB5D1F901CA200E90A22 /* BookwormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C4EFB671F901CA200E90A22 /* BookwormUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C4EFB771F901CA200E90A22 /* Build configuration list for PBXNativeTarget "BookwormUITests" */;
+			buildPhases = (
+				FB212D59EAF72F8A44E070F3 /* [CP] Check Pods Manifest.lock */,
+				5C4EFB641F901CA200E90A22 /* Sources */,
+				5C4EFB651F901CA200E90A22 /* Frameworks */,
+				5C4EFB661F901CA200E90A22 /* Resources */,
+				46E6CB5B2D3D57DBEB0E4B34 /* [CP] Embed Pods Frameworks */,
+				FD169917D2CA93F5F6C6CDAD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C4EFB6A1F901CA200E90A22 /* PBXTargetDependency */,
+			);
+			name = BookwormUITests;
+			productName = BookwormUITests;
+			productReference = 5C4EFB681F901CA200E90A22 /* BookwormUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C4EFB411F901CA100E90A22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = DeedsIT;
+				TargetAttributes = {
+					5C4EFB481F901CA200E90A22 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					5C4EFB5C1F901CA200E90A22 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5C4EFB481F901CA200E90A22;
+					};
+					5C4EFB671F901CA200E90A22 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5C4EFB481F901CA200E90A22;
+					};
+				};
+			};
+			buildConfigurationList = 5C4EFB441F901CA100E90A22 /* Build configuration list for PBXProject "Bookworm" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C4EFB401F901CA100E90A22;
+			productRefGroup = 5C4EFB4A1F901CA200E90A22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C4EFB481F901CA200E90A22 /* Bookworm */,
+				5C4EFB5C1F901CA200E90A22 /* BookwormTests */,
+				5C4EFB671F901CA200E90A22 /* BookwormUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C4EFB471F901CA200E90A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D370569B1FD3736B004BBCAC /* Student.storyboard in Resources */,
+				5C4EFB571F901CA200E90A22 /* LaunchScreen.storyboard in Resources */,
+				5C4EFB7C1F91195800E90A22 /* GoogleService-Info.plist in Resources */,
+				5C4EFB521F901CA200E90A22 /* Main.storyboard in Resources */,
+				D3D6B7D0201ADF2F00CFD95B /* Assets.xcassets in Resources */,
+				D37056991FD36A1A004BBCAC /* Lecturer.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4EFB5B1F901CA200E90A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4EFB661F901CA200E90A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D1183EFE84206ECB9436BED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C85346F1858AD1176E1D31E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/HockeySDK/HockeySDKResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HockeySDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bookworm/Pods-Bookworm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42CFFC50DE510377080E00AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookwormTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46E6CB5B2D3D57DBEB0E4B34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookwormUITests/Pods-BookwormUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94C1CBB87680E8D8B035406D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bookworm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3EB2F8C98400799684D096E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookwormTests/Pods-BookwormTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E20C0826DBA353798C7E7AE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookwormTests/Pods-BookwormTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB212D59EAF72F8A44E070F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookwormUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD169917D2CA93F5F6C6CDAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookwormUITests/Pods-BookwormUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C4EFB451F901CA200E90A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D324F88C1FD8AD0600F8D211 /* LecturerCourseClassViewController.swift in Sources */,
+				D324F8881FD674A900F8D211 /* Rating.swift in Sources */,
+				5C0DF5EF1F9FF26A00C6261F /* ViewController.swift in Sources */,
+				5C879A141FA281DA004E0FFD /* StudentNavigationController.swift in Sources */,
+				D38346091FD3901F00085B86 /* Course.swift in Sources */,
+				5C879A121FA0C0EF004E0FFD /* StudentLoggedInViewController.swift in Sources */,
+				D3E2AD7B1FCE162A00B3EE3D /* LecturerLoggedInViewController.swift in Sources */,
+				D3E2AD7F1FCF6D4500B3EE3D /* FirebaseService.swift in Sources */,
+				D324F8861FD673B400F8D211 /* CourseClass.swift in Sources */,
+				D0B627902075141C00E0F949 /* ColorConstants.swift in Sources */,
+				5C4EFB4D1F901CA200E90A22 /* AppDelegate.swift in Sources */,
+				5C0DF5F21FA08BAC00C6261F /* RegistrationViewController.swift in Sources */,
+				D3E2AD831FD0BE8600B3EE3D /* LecturerProfileViewController.swift in Sources */,
+				D324F88A1FD756E500F8D211 /* BookwormUser.swift in Sources */,
+				D3E2AD811FD0BE2A00B3EE3D /* LecturerMyCoursesViewController.swift in Sources */,
+				D37C40102037F61D008BA02B /* LecturerLiveClassViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4EFB591F901CA200E90A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4EFB621F901CA200E90A22 /* BookwormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4EFB641F901CA200E90A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4EFB6D1F901CA200E90A22 /* BookwormUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C4EFB5F1F901CA200E90A22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C4EFB481F901CA200E90A22 /* Bookworm */;
+			targetProxy = 5C4EFB5E1F901CA200E90A22 /* PBXContainerItemProxy */;
+		};
+		5C4EFB6A1F901CA200E90A22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C4EFB481F901CA200E90A22 /* Bookworm */;
+			targetProxy = 5C4EFB691F901CA200E90A22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C4EFB501F901CA200E90A22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C4EFB511F901CA200E90A22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C4EFB551F901CA200E90A22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C4EFB561F901CA200E90A22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C4EFB6F1F901CA200E90A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C4EFB701F901CA200E90A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C4EFB721F901CA200E90A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC4176F6EFBE36A70EB99A6 /* Pods-Bookworm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Bookworm/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deedsit.bookworm.debug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C4EFB731F901CA200E90A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16D3532DE33332F34AD24CA /* Pods-Bookworm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Bookworm/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deedsit.bookworm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C4EFB751F901CA200E90A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C81CB8F436F7EE3968FCCED1 /* Pods-BookwormTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookwormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deedsit.BookwormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bookworm.app/Bookworm";
+			};
+			name = Debug;
+		};
+		5C4EFB761F901CA200E90A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D441F1E151132F854BD302 /* Pods-BookwormTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookwormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deedsit.BookwormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bookworm.app/Bookworm";
+			};
+			name = Release;
+		};
+		5C4EFB781F901CA200E90A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 509FBB6D3A59DA7B1D9A6E1A /* Pods-BookwormUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookwormUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deedsit.BookwormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bookworm;
+			};
+			name = Debug;
+		};
+		5C4EFB791F901CA200E90A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B2338288A04A4A532F271AB /* Pods-BookwormUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookwormUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deedsit.BookwormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bookworm;
+			};
+			name = Release;
+		};
+		D324F88D1FE091C000F8D211 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		D324F88E1FE091C000F8D211 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89288638964A1665F6F59178 /* Pods-Bookworm.adhoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Bookworm/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deedsit.bookworm.ad-hoc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc;
+		};
+		D324F88F1FE091C000F8D211 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349A059D28E52C8637CB8457 /* Pods-BookwormTests.adhoc.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookwormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deedsit.BookwormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bookworm.app/Bookworm";
+			};
+			name = AdHoc;
+		};
+		D324F8901FE091C000F8D211 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36CB1BB97D560345A313E40 /* Pods-BookwormUITests.adhoc.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookwormUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.deedsit.BookwormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bookworm;
+			};
+			name = AdHoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C4EFB441F901CA100E90A22 /* Build configuration list for PBXProject "Bookworm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C4EFB6F1F901CA200E90A22 /* Debug */,
+				5C4EFB701F901CA200E90A22 /* Release */,
+				D324F88D1FE091C000F8D211 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C4EFB711F901CA200E90A22 /* Build configuration list for PBXNativeTarget "Bookworm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C4EFB721F901CA200E90A22 /* Debug */,
+				5C4EFB731F901CA200E90A22 /* Release */,
+				D324F88E1FE091C000F8D211 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C4EFB741F901CA200E90A22 /* Build configuration list for PBXNativeTarget "BookwormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C4EFB751F901CA200E90A22 /* Debug */,
+				5C4EFB761F901CA200E90A22 /* Release */,
+				D324F88F1FE091C000F8D211 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C4EFB771F901CA200E90A22 /* Build configuration list for PBXNativeTarget "BookwormUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C4EFB781F901CA200E90A22 /* Debug */,
+				5C4EFB791F901CA200E90A22 /* Release */,
+				D324F8901FE091C000F8D211 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C4EFB411F901CA100E90A22 /* Project object */;
+}

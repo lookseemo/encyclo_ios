@@ -1,0 +1,20 @@
+-----README----
+
+1. Cocoapods
+
+To install cocoapods run the command - 
+
+sudo gem install cocoapods
+
+2. Check out the project
+
+3. From terminal go to the root directory of the checked out project and run - 
+
+pod install
+
+4. Open Bookworm.xcworkspace to start working on the project
+
+5. When making changes to the UI run the app on different models - iPhoneX, iPhone 8 etc. 
+
+6. Use the storyboard to make UI changes. 6. Use the storyboard to make UI changes. 6. Use the storyboard to make UI changes. 6. Use the storyboard to make UI changes. 6. Use the storyboard to make UI changes. 6. Use the storyboard to make UI changes. 
+
